@@ -1,0 +1,4 @@
+baseurl: 
+name: Vu2
+markdown: redcarpet
+exclude: ['README.md', 'node_modules', 'gulpfile.js', 'package.json', 'assets/css/*.scss']

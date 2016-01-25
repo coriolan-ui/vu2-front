@@ -1,0 +1,44 @@
+#footer {
+  left: 0;
+  clear: both;
+  width: 100%;
+  bottom: 0;
+  padding: 40px;
+  position: absolute;
+  box-sizing: border-box;
+  box-shadow: 0 8px 16px 5px #0015B4;
+  background-image: linear-gradient(#011842, #012257);
+}
+
+.b-footer__links-list {
+  overflow: hidden;
+  text-align: center;
+  margin: 0 -15px 20px;
+}
+
+.b-footer__list-item:first-child {
+  border-left: 0 none;
+}
+
+.b-footer__list-item {
+  padding: 0 12px;
+  display: inline;
+  white-space: nowrap;
+  border-left: 1px solid #cfcfcf;
+}
+
+.b-footer__link {
+  color: #cfcfcf;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.b-footer__payments {
+  width: 365px;
+  margin: 0 auto;
+}
+
+.b-footer__payments-item {
+  float: left;
+  margin: 0 12px;
+}

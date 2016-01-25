@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vu2</title>
+    <meta name="description" content="Vu2">
+    <meta name="keywords" content="Vu2">
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-32.png">
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-144.png">
+</head>
+<body>
+
+<div id="main-wrapper">
+    <!--Header-->
+    <header id="header">
+        {% include header.html %}
+    </header>
+
+    <!--Content-->
+    <div class="content">
+        <h1>Body</h1>
+
+        {{ content }}
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <ul class="b-footer__links-list">
+            <li class="b-footer__list-item"><a href="/contact_us" class="b-footer__link">Служба поддержки</a></li>
+            <li class="b-footer__list-item"><a href="/news" class="b-footer__link">Новости</a></li>
+            <li class="b-footer__list-item"><a href="/rules" class="b-footer__link">Правила</a></li>
+            <li class="b-footer__list-item"><a href="/v-play" class="b-footer__link">V-play</a></li>
+            <li class="b-footer__list-item"><a href="/faq" class="b-footer__link">FAQ</a></li>
+            <li class="b-footer__list-item"><a href="/about" class="b-footer__link">О клубе</a></li>
+
+        </ul>
+        <ul class="b-footer__payments">
+            <li class="b-footer__payments-item"><span class="b-footer__payments-link b-footer__payments-link_visa-m"></span></li>
+            <li class="b-footer__payments-item"><span class="b-footer__payments-link b-footer__payments-link_yamoney"></span></li>
+            <li class="b-footer__payments-item"><span class="b-footer__payments-link b-footer__payments-link_liqpay"></span></li>
+            <li class="b-footer__payments-item"><span class="b-footer__payments-link b-footer__payments-link_qiwi"></span></li>
+            <li class="b-footer__payments-item"><span class="b-footer__payments-link b-footer__payments-link_sms"></span></li>
+            <li class="b-footer__payments-item"><span class="b-footer__payments-link b-footer__payments-link_wm"></span></li>
+        </ul>
+    </footer>
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/vendor/jquery-1.11.3.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+</body>
+</html>

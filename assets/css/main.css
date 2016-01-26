@@ -353,22 +353,27 @@ td,
 th {
   padding: 0; }
 
-.row::after {
-  clear: both;
-  content: "";
-  display: table; }
+.row {
+  margin: 0 -2%; }
+  .row::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .col-6 {
   float: left;
-  width: 50%; }
+  width: 50%;
+  padding: 0 2%;
+  box-sizing: border-box; }
 
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
-  background-color: #01133b;
-  color: #fff; }
+  background: #01133b;
+  color: #cfcfcf;
+  font-weight: 400; }
 
 ul {
   padding: 0;
@@ -378,7 +383,8 @@ ul {
 a {
   color: #fff; }
   a:hover {
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
 
 button {
   outline: none; }
@@ -395,7 +401,9 @@ button {
   border-right: 1px solid #0033F7;
   padding: 50px 40px 142px 40px;
   box-shadow: 0 -5px 16px 5px #0015B4;
-  background: url("/assets/img/bg.jpeg"); }
+  background: url("/assets/img/bg.jpeg");
+  width: 840px;
+  margin: 0 auto; }
 
 .b-search-input__wrapper--right {
   top: 100px;
@@ -630,7 +638,8 @@ button {
   color: #def0ff;
   font-size: 13px;
   text-decoration: none;
-  text-shadow: 0 -1px 0 #001a40; }
+  text-shadow: 0 -1px 0 #001a40;
+  text-transform: uppercase; }
 
 .b-nav__menu-item.b-nav__menu-item_active {
   background: url(/assets/img/header/active_menu_sprite.png) 50% -58px repeat-x #001f64;
@@ -685,11 +694,23 @@ button {
 .game-list .game-item {
   width: 25%;
   float: left;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 40px; }
   .game-list .game-item img {
     width: 174px;
     height: 93px;
-    margin: 0 auto; }
+    margin: 0 auto 10px;
+    display: block; }
+
+.home-prefooter h1 {
+  color: #00c6ff;
+  font-size: 20px;
+  line-height: 1.35em;
+  margin-bottom: 20px;
+  font-weight: 400; }
+
+.home-prefooter a {
+  color: #0099c5; }
 
 #footer {
   left: 0;

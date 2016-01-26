@@ -9,11 +9,34 @@
     width: 25%;
     float: left;
     text-align: center;
+    margin-bottom: 40px;
 
     img {
       width: 174px;
       height: 93px;
-      margin: 0 auto;
+      margin: 0 auto 10px;
+      display: block;
+    }
+  }
+}
+
+.home-prefooter {
+  h1 {
+    color: $colorPrimary;
+    font-size: 20px;
+    line-height: 1.35em;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  p {
+
+  }
+  a {
+    color: $colorSecondary;
+  }
+  ul {
+    li {
+      
     }
   }
 }

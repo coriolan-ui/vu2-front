@@ -1,3 +1,19 @@
-body {
-  //background: linear-gradient(40deg, #000000, #0066bb);
+.hero {
+  text-align: center;
+}
+
+.game-list {
+  @include clearfix;
+
+  .game-item {
+    width: 25%;
+    float: left;
+    text-align: center;
+
+    img {
+      width: 174px;
+      height: 93px;
+      margin: 0 auto;
+    }
+  }
 }

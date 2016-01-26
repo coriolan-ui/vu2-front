@@ -2,8 +2,68 @@
 layout: base
 ---
 
-<h1>content</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae praesentium recusandae et obcaecati suscipit, nam provident vel aspernatur, quae voluptatum delectus incidunt laboriosam, nisi voluptates, fuga temporibus rerum aliquid officiis possimus iure quas. Nisi labore ex illum cum a, tenetur corporis facilis harum iure iusto non, excepturi odit, vitae magnam.</p>
+<div class="hero">
+  <a href="javascript:void(0)">Играть сейчас</a>
+</div>
 
+<h2>Самые популярные автоматы «Novomatic Gaminator»</h2>
 
-<h1>content end</h1>
+<div class="game-list">
+  {% for games in site.categories.games limit:8 %}
+    <a href="{{ site.baseurl }}/{{ games.permalink }}" class="game-item">
+      <img class="game-image lazy" data-original="{{ site.baseurl }}/assets/img/games/{{ games.slug }}.png" alt="{{ games.title }}">
+      <div class="game-title">{{ games.title }}</div>
+    </a>
+  {% endfor %}
+</div>
+
+<h2>Настоящие гаминаторы</h2>
+
+<div class="game-list">
+  {% for games in site.categories.games limit:15 %}
+    <a href="{{ site.baseurl }}/{{ games.permalink }}" class="game-item">
+      <img class="game-image lazy" data-original="{{ site.baseurl }}/assets/img/games/{{ games.slug }}.png" alt="{{ games.title }}">
+      <div class="game-title">{{ games.title }}</div>
+    </a>
+  {% endfor %}
+</div>
+
+<h3>Тайтл сеошного текста</h3>
+
+<div class="row">
+  <div class="col-6">
+
+    <p>Дескрипшн сеошного текста</p>
+    <p>Дескрипшн сеошного текста</p>
+    <p>Дескрипшн сеошного текста</p>
+    <p>Дескрипшн сеошного текста</p>
+
+    <h4>Тайтл сеошного текста</h4>
+
+    <ul>
+      <li>Список сеошного текста</li>
+      <li>Список сеошного текста</li>
+      <li>Список сеошного текста</li>
+      <li>Список сеошного текста</li>
+      <li>Список сеошного текста</li>
+    </ul>
+
+  </div>
+  <div class="col-6">
+
+    <p>Дескрипшн сеошного текста</p>
+    <p>Дескрипшн сеошного текста</p>
+    <p>Дескрипшн сеошного текста</p>
+
+    <ul>
+      <li>Список сеошного текста</li>
+      <li>Список сеошного текста</li>
+      <li>Список сеошного текста</li>
+    </ul>
+
+    <h4>Тайтл сеошного текста</h4>
+
+    <p>Дескрипшн сеошного текста</p>
+
+  </div>
+</div>

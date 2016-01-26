@@ -7,12 +7,22 @@ body {
   color: #fff;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 a {
   color: #fff;
 
   &:hover {
     color: #fff;
   }
+}
+
+button {
+  outline: none;
 }
 
 #main-wrapper {
@@ -22,8 +32,71 @@ a {
   min-height: 100%;
 }
 
+//Content
 .content {
-  padding-bottom: 142px;
+  position: relative;
+  border-left: 1px solid #0033F7;
+  border-right: 1px solid #0033F7;
+  padding: 50px 40px 142px 40px;
+  box-shadow: 0 -5px 16px 5px #0015B4;
 }
+
+.b-search-input__wrapper--right {
+  top: 100px;
+  right: 30px;
+  left: auto;
+  display: block;
+  position: absolute;
+}
+
+.ui-helper-hidden-accessible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#game_search {
+  float: right;
+  width: 145px;
+}
+
+.b-search-input__wrapper .b-search__input {
+  display: inline-block;
+  width: 170px;
+  height: 35px;
+  color: #0567ca;
+  font-size: 14px;
+  border: 0;
+  border-radius: 3px;
+  border-bottom: 1px solid #fff;
+  box-shadow: inset 4px 3px 9px 0 rgba(0,0,0,.62);
+  padding: 0 35px;
+  //background: url(/templates/vu2/images/sprite_png.png?v=4) -89px -176px no-repeat #c0d7ff;
+}
+
+.h-prg, p {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.content-text {
+  h1 {
+    color: $colorPrimary;
+    font-size: 20px;
+  }
+  h4 {
+    color: $colorPrimary;
+  }
+}
+
+
+
+
+
 
 

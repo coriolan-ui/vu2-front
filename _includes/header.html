@@ -1,4 +1,5 @@
 <header id="header">
+    <a class="logo-link" href="/"></a>
     <form id="content" action="/ajax/login" class="b-login-form b-header__login-form" method="post">
         <div class="b-login-form__fields">
             <div class="h-mb-5">Вход в личный кабинет</div>
@@ -17,22 +18,52 @@
         <div class="b-login-form__soc">
             <div class="auth__social-title">Войти с помощью</div>
             <div id="social-login" class="b-social-log__list globologin-box" data-globologin-cb="globoLoginCb">
-                <span class="b-social-log__link b-social-log__link_vk globologin-vk" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'VK', location.href]);"></span>
-                <span class="b-social-log__link b-social-log__link_ok globologin-ok" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'OK', location.href]);"></span>
-                <span class="b-social-log__link b-social-log__link_mr globologin-mr" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'MR', location.href]);"></span>
-                <span class="b-social-log__link b-social-log__link_fb globologin-fb" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'FB', location.href]);"></span>
-                <span class="b-social-log__link b-social-log__link_gg globologin-gg" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'GG', location.href]);"></span>
-                <span class="b-social-log__link b-social-log__link_ya globologin-ya" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'YA', location.href]);"></span>
+                <ul>
+                    <li class="social-log globologin-vk" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'VK', location.href]);"></li>
+                    <li class="social-log globologin-ok" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'OK', location.href]);"></li>
+                    <li class="social-log globologin-mr" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'MR', location.href]);"></li>
+                    <li class="social-log globologin-fb" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'FB', location.href]);"></li>
+                    <li class="social-log globologin-gg" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'GG', location.href]);"></li>
+                    <li class="social-log globologin-ya" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'YA', location.href]);"></li>
+                </ul>
                 <div class="clear"></div>
             </div>
             <input type="hidden" name="code" value="1">
             <input type="hidden" name="withoutcode" value="1">
             <input type="hidden" name="is404" value="/">
         </div>
+        <button onclick="_gaq.push(['_trackEvent','morda','reg_yellow button']); location='/register#reg';" type="submit" class="b-header__reg-but-area">
+            <span class="b-header__reg-but">Регистрация</span>
+        </button>
     </form>
 
-    <nav>
-        <a href="{{ site.baseurl }}/">Home</a>
-        <a href="{{ site.baseurl }}/games">Игры</a>
+    <!--<nav>-->
+        <!--<a href="{{ site.baseurl }}/">Home</a>-->
+        <!--<a href="{{ site.baseurl }}/games">Игры</a>-->
+    <!--</nav>-->
+
+    <nav class="nav">
+        <ul class="b-nav__menu" id="menu-noauth">
+            <li class="b-nav__menu-item">
+                <a href="/slots" class="b-nav__menu-link">Игровой зал</a>
+            </li>
+            <li class="b-nav__menu-item">
+                <a href="/lottery" class="b-nav__menu-link"> <i class="b-nav__menu-label b-nav__menu-label_new"></i>Лотерея</a>
+            </li>
+            <li class="b-nav__menu-item">
+                <a href="/shop" class="b-nav__menu-link">Магазин</a>
+            </li>
+            <li class="b-nav__menu-item">
+                <a data-counter="+0" href="/tournaments" class="b-nav__menu-link"> Турниры</a>
+            </li>
+            <li class="b-nav__menu-item">
+                <a href="/vip" class="b-nav__menu-link">
+                    <i class="b-nav__menu-label b-nav__menu-label_new"></i>VIP БОНУСЫ
+                </a>
+            </li>
+            <li class="b-nav__menu-item">
+                <a href="/contact_us" class="b-nav__menu-link">Поддержка</a>
+            </li>
+        </ul>
     </nav>
 </header>

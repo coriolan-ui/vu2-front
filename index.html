@@ -3,9 +3,10 @@ layout: base
 ---
 
 <div class="hero">
-  <a href="javascript:void(0)">Играть сейчас</a>
+  <!--<a href="javascript:void(0)">Играть сейчас</a>-->
 </div>
 
+<a href="/slots#slots" class="b-multi"></a>
 <div class="b-search-input__wrapper b-search-input__wrapper--right">
   <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
   <input name="game_search" id="game_search" class="b-search__input ui-autocomplete-input" placeholder="Найди любимую игру" autocomplete="off">
@@ -13,7 +14,7 @@ layout: base
   <p id="project-description"></p>
 </div>
 
-<h2>Самые популярные автоматы «Novomatic Gaminator»</h2>
+<h2 class="layout-header">Самые популярные автоматы «Novomatic Gaminator»</h2>
 
 <div class="game-list">
   {% for games in site.categories.games limit:8 %}
@@ -24,7 +25,7 @@ layout: base
   {% endfor %}
 </div>
 
-<h2>Настоящие гаминаторы</h2>
+<h2 class="layout-header">Настоящие гаминаторы</h2>
 
 <div class="game-list">
   {% for games in site.categories.games limit:15 %}

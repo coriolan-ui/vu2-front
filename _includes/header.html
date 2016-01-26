@@ -7,7 +7,8 @@
                 <input type="text" name="login" class="b-login-form__field h-mb-7" placeholder="Логин" required="">
             </span>
             <span class="formInput">
-                <input type="password" name="password" class="b-login-form__field h-mb-7" placeholder="Пароль" required="">
+                <input type="password" name="password" class="b-login-form__field h-mb-7" placeholder="Пароль"
+                       required="">
             </span>
             <input type="hidden" value="1" name="code">
             <input type="hidden" value="1" name="withoutcode">
@@ -19,12 +20,18 @@
             <div class="auth__social-title">Войти с помощью</div>
             <div id="social-login" class="b-social-log__list globologin-box" data-globologin-cb="globoLoginCb">
                 <ul>
-                    <li class="social-log globologin-vk" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'VK', location.href]);"></li>
-                    <li class="social-log globologin-ok" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'OK', location.href]);"></li>
-                    <li class="social-log globologin-mr" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'MR', location.href]);"></li>
-                    <li class="social-log globologin-fb" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'FB', location.href]);"></li>
-                    <li class="social-log globologin-gg" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'GG', location.href]);"></li>
-                    <li class="social-log globologin-ya" onclick="_gaq.push(['_trackEvent', 'sociallogin', 'YA', location.href]);"></li>
+                    <li class="social-log globologin-vk"
+                        onclick="_gaq.push(['_trackEvent', 'sociallogin', 'VK', location.href]);"></li>
+                    <li class="social-log globologin-ok"
+                        onclick="_gaq.push(['_trackEvent', 'sociallogin', 'OK', location.href]);"></li>
+                    <li class="social-log globologin-mr"
+                        onclick="_gaq.push(['_trackEvent', 'sociallogin', 'MR', location.href]);"></li>
+                    <li class="social-log globologin-fb"
+                        onclick="_gaq.push(['_trackEvent', 'sociallogin', 'FB', location.href]);"></li>
+                    <li class="social-log globologin-gg"
+                        onclick="_gaq.push(['_trackEvent', 'sociallogin', 'GG', location.href]);"></li>
+                    <li class="social-log globologin-ya"
+                        onclick="_gaq.push(['_trackEvent', 'sociallogin', 'YA', location.href]);"></li>
                 </ul>
                 <div class="clear"></div>
             </div>
@@ -32,15 +39,11 @@
             <input type="hidden" name="withoutcode" value="1">
             <input type="hidden" name="is404" value="/">
         </div>
-        <button onclick="_gaq.push(['_trackEvent','morda','reg_yellow button']); location='/register#reg';" type="submit" class="b-header__reg-but-area">
+        <button onclick="_gaq.push(['_trackEvent','morda','reg_yellow button']); location='/register#reg';"
+                type="submit" class="b-header__reg-but-area">
             <span class="b-header__reg-but">Регистрация</span>
         </button>
     </form>
-
-    <!--<nav>-->
-        <!--<a href="{{ site.baseurl }}/">Home</a>-->
-        <!--<a href="{{ site.baseurl }}/games">Игры</a>-->
-    <!--</nav>-->
 
     <nav class="nav">
         <ul class="b-nav__menu" id="menu-noauth">
@@ -66,4 +69,125 @@
             </li>
         </ul>
     </nav>
+
+    <div class="b-head-gallery b-head-gallery__wrap">
+        <div class="b-head-gallery__gal"></div>
+    </div>
+    <div class="b-top-info-wrapper clearfix">
+        <div class="b-top-info clearfix">
+            <div id="top-games" class="b-top-info__wins">
+                <h5 class="b-top-info__header">Сейчас выигрывают</h5>
+
+                <div class="b-top-info__lighter">
+                    <!--<div class="b-wins-list" style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; height: 150px;">-->
+                    <!--<ul class="b-wins-list__table" style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; height: 600px; top: -150px;"><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">2400р.</span>-->
+                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">10500р.</span>-->
+                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">3100р.</span>-->
+                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">2400р.</span>-->
+                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">1200р.</span>-->
+                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">1800р.</span>-->
+                    <!--</li>-->
+                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">2100р.</span>-->
+                    <!--</li>-->
+                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">6600р.</span>-->
+                    <!--</li>-->
+                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">25000р.</span>-->
+                    <!--</li>-->
+                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">7500р.</span>-->
+                    <!--</li>-->
+                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">2400р.</span>-->
+                    <!--</li>-->
+                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">10500р.</span>-->
+                    <!--</li>-->
+                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">3100р.</span>-->
+                    <!--</li>-->
+                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">2400р.</span>-->
+                    <!--</li>-->
+                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">1200р.</span>-->
+                    <!--</li>-->
+                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">1800р.</span>-->
+                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">2100р.</span>-->
+                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">6600р.</span>-->
+                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">25000р.</span>-->
+                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+
+                    <!--<span class="col-1">***</span>-->
+                    <!--<span class="col-2">7500р.</span>-->
+                    <!--</li></ul>-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--</div>-->
+                </div>
+                <div class="b-top-info__game">
+                    <div id="b-top-info__game-ra"></div>
+                </div>
+                <div class="b-top-info__service">
+                    <h5 class="b-top-info__header">Круглосуточный сервис</h5>
+                    <img src="/templates/vu2/images/service.jpg?v=5b76d" alt=""
+                         class="b-top-info__lighter siteheart_btn" width="250" height="157">
+                </div>
+                <div class="clearfix"></div>
+                <a class="icon-play-button b-top-info__play-but" href="/register#reg"></a>
+            </div>
+            <div class="b-top-info-shadow_right"></div>
+            <div class="b-top-info-shadow_left"></div>
+            <div class="b-top-info-shadow_bottom"></div>
+        </div>
+    </div>
 </header>

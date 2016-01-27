@@ -1,4 +1,4 @@
-//Header
+
 #header {
   width: 100%;
 }
@@ -221,74 +221,4 @@
   background: #0034d2;
   background: linear-gradient(to bottom,  #0034d2 0%,#0038a6 23%,#0039a2 73%,#002d7f 100%);
   box-shadow:0 -4px 5px rgba(0,0,0,0.4) inset
-}
-
-//Hero
-.hero {
-  position: relative;
-  width: 1000px;
-  height: 270px;
-}
-
-.top-info {
-  width: 940px;
-  height: 231px;
-  position: absolute;
-  z-index: 2;
-  padding: 20px 30px;
-  background: url(/assets/img/header/top_info_bg_all.jpg) no-repeat #00133a;
-}
-
-.head-gallery-wrap {
-  position: relative;
-  width: 925px;
-  margin: 0 auto;
-}
-
-.head-gallery-gal {
-  overflow: hidden;
-  padding: 0 12px;
-  background: #001A52;
-  height: 20px;
-  box-shadow: inset 0 0 37px -6px #03AED5;
-}
-
-.top-info-wins {
-  float: left;
-  width: 251px;
-}
-
-.top-info-header {
-  font-size: 16px;
-  color: #fff;
-  display: block;
-  margin-bottom: 17px;
-  text-align: center;
-  margin-top: 6px;
-}
-
-.top-info-lighter {
-  box-shadow: 0 0 12px 5px #005ae5;
-  cursor: pointer;
-}
-
-.top-info-game {
-  float: left;
-  width: 338px;
-  margin-left: 50px;
-  text-align: center;
-  background: url(/assets/img/header/game_top.jpg) no-repeat;
-  height: 146px;
-  padding-top: 54px;
-}
-
-.hero-service {
-    float: left;
-    width: 250px;
-    margin-left: 50px;
-}
-
-.img-siteheart {
-    box-shadow: 0 0 12px 5px #005ae5;
-    cursor: pointer;
 }

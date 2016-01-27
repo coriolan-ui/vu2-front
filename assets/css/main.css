@@ -386,14 +386,14 @@ button {
   position: relative;
   border-left: 1px solid #0033F7;
   border-right: 1px solid #0033F7;
-  padding: 50px 40px 142px 40px;
+  padding: 0 40px 142px 40px;
   box-shadow: 0 -5px 16px 5px #0015B4;
   background: url("/assets/img/bg.jpeg");
   width: 840px;
   margin: 0 auto; }
 
 .b-search-input__wrapper--right {
-  top: 100px;
+  top: 420px;
   right: 30px;
   left: auto;
   display: block;
@@ -437,6 +437,7 @@ button {
   color: #00c6ff; }
 
 .layout-header {
+  font-weight: 100;
   margin: 60px 0; }
 
 .b-multi {
@@ -445,7 +446,7 @@ button {
   height: 55px;
   background: url(/assets/img/header/header_sprite_png.png?v=4) 18px -592px no-repeat;
   right: 40px;
-  margin-top: -20px;
+  margin-top: -70px;
   z-index: 1; }
 
 .row {
@@ -649,17 +650,27 @@ button {
   box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.4) inset; }
 
 .hero {
-  position: relative;
+  left: -80px;
   width: 1000px;
-  height: 270px; }
+  height: 270px;
+  position: relative;
+  margin-bottom: 160px;
+  box-shadow: 0 41px 75px 6px #0012E3; }
 
-.top-info {
+.hero-info {
   width: 940px;
   height: 231px;
   position: absolute;
   z-index: 2;
   padding: 20px 30px;
   background: url(/assets/img/header/top_info_bg_all.jpg) no-repeat #00133a; }
+  .hero-info__btn {
+    display: block;
+    margin: 210px auto 0;
+    width: 316px;
+    height: 81px;
+    border-radius: 15px;
+    background: url(/assets/img/header/header_sprite.png) 0 -652px no-repeat; }
 
 .head-gallery-wrap {
   position: relative;
@@ -673,11 +684,14 @@ button {
   height: 20px;
   box-shadow: inset 0 0 37px -6px #03AED5; }
 
-.top-info-wins {
+.hero-wins {
   float: left;
   width: 251px; }
+  .hero-wins .hero-wins__container {
+    box-shadow: 0 0 12px 5px #005ae5;
+    cursor: pointer; }
 
-.top-info-header {
+.hero-wins__title {
   font-size: 16px;
   color: #fff;
   display: block;
@@ -685,11 +699,7 @@ button {
   text-align: center;
   margin-top: 6px; }
 
-.top-info-lighter {
-  box-shadow: 0 0 12px 5px #005ae5;
-  cursor: pointer; }
-
-.top-info-game {
+.hero-game {
   float: left;
   width: 338px;
   margin-left: 50px;
@@ -702,13 +712,9 @@ button {
   float: left;
   width: 250px;
   margin-left: 50px; }
-
-.img-siteheart {
-  box-shadow: 0 0 12px 5px #005ae5;
-  cursor: pointer; }
-
-.hero {
-  text-align: center; }
+  .hero-service .hero-service__img-siteheart {
+    box-shadow: 0 0 12px 5px #005ae5;
+    cursor: pointer; }
 
 .game-list::after {
   clear: both;

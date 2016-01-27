@@ -353,19 +353,6 @@ td,
 th {
   padding: 0; }
 
-.row {
-  margin: 0 -2%; }
-  .row::after {
-    clear: both;
-    content: "";
-    display: table; }
-
-.col-6 {
-  float: left;
-  width: 50%;
-  padding: 0 2%;
-  box-sizing: border-box; }
-
 body {
   margin: 0;
   padding: 0;
@@ -460,6 +447,19 @@ button {
   right: 40px;
   margin-top: -20px;
   z-index: 1; }
+
+.row {
+  margin: 0 -2%; }
+  .row::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.col-6 {
+  float: left;
+  width: 50%;
+  padding: 0 2%;
+  box-sizing: border-box; }
 
 #header {
   width: 100%; }
@@ -728,7 +728,7 @@ button {
 
 .home-prefooter h1 {
   color: #00c6ff;
-  font-size: 70px;
+  font-size: 20px;
   line-height: 1.35em;
   margin-bottom: 20px;
   font-weight: 400; }

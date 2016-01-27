@@ -1,7 +1,9 @@
-@import 'modules/var';
+@import 'tools/var';
 @import 'coriolan-ui/coriolan-ui';
-@import 'modules/grid';
-@import 'modules/base';
+@import 'tools/base';
+@import 'tools/grid';
 @import 'modules/header';
-@import 'pages/home';
+@import 'pages/home/hero';
+@import 'pages/home/games-wrap';
+@import 'pages/home/prefooter';
 @import 'modules/footer';

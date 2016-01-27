@@ -1,0 +1,18 @@
+.game-list {
+  @include clearfix;
+
+  .game-item {
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin-bottom: 40px;
+
+    img {
+      width: 174px;
+      height: 93px;
+      margin: 0 auto 10px;
+      display: block;
+    }
+  }
+}
+

@@ -10,10 +10,7 @@
 
 <div class="game-list">
   {% for games in site.categories.games limit:8 %}
-    <a href="{{ site.baseurl }}/{{ games.permalink }}" class="game-item">
-      <img class="game-image lazy" data-original="{{ site.baseurl }}/assets/img/games/{{ games.slug }}.png" alt="{{ games.title }}">
-      <div class="game-title">{{ games.title }}</div>
-    </a>
+    {% include home/game-item.html %}
   {% endfor %}
 </div>
 
@@ -21,9 +18,6 @@
 
 <div class="game-list">
   {% for games in site.categories.games limit:15 %}
-    <a href="{{ site.baseurl }}/{{ games.permalink }}" class="game-item">
-      <img class="game-image lazy" data-original="{{ site.baseurl }}/assets/img/games/{{ games.slug }}.png" alt="{{ games.title }}">
-      <div class="game-title">{{ games.title }}</div>
-    </a>
+    {% include home/game-item.html %}
   {% endfor %}
 </div>

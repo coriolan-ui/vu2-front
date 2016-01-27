@@ -1,12 +1,12 @@
 <header id="header">
     <a class="logo-link" href="/"></a>
-    <form id="content" action="/ajax/login" class="b-login-form b-header__login-form" method="post">
-        <div class="b-login-form__fields">
+    <form id="content" action="/ajax/login" class="login-form" method="post">
+        <div class="login-form-fields">
             <div class="h-mb-5">Вход в личный кабинет</div>
-            <span class="formInput">
+            <span>
                 <input type="text" name="login" class="b-login-form__field h-mb-7" placeholder="Логин" required="">
             </span>
-            <span class="formInput">
+            <span>
                 <input type="password" name="password" class="b-login-form__field h-mb-7" placeholder="Пароль"
                        required="">
             </span>
@@ -16,9 +16,9 @@
 
             <a href="{{ site.baseurl }}/forgot#forgot" class="forgot_link b-login-form__forget-link">Забыли пароль?</a>
         </div>
-        <div class="b-login-form__soc">
-            <div class="auth__social-title">Войти с помощью</div>
-            <div id="social-login" class="b-social-log__list globologin-box" data-globologin-cb="globoLoginCb">
+        <div class="login-form-soc">
+            <div>Войти с помощью</div>
+            <div id="social-login" class="social-log-list globologin-box" data-globologin-cb="globoLoginCb">
                 <ul>
                     <li class="social-log globologin-vk"
                         onclick="_gaq.push(['_trackEvent', 'sociallogin', 'VK', location.href]);"></li>
@@ -40,154 +40,61 @@
             <input type="hidden" name="is404" value="/">
         </div>
         <button onclick="_gaq.push(['_trackEvent','morda','reg_yellow button']); location='/register#reg';"
-                type="submit" class="b-header__reg-but-area">
-            <span class="b-header__reg-but">Регистрация</span>
+                type="submit" class="header-reg-but-area">
+            <span class="header-reg-but">Регистрация</span>
         </button>
     </form>
 
     <nav class="nav">
-        <ul class="b-nav__menu" id="menu-noauth">
-            <li class="b-nav__menu-item">
-                <a href="/slots" class="b-nav__menu-link">Игровой зал</a>
+        <ul class="nav-menu" id="menu-noauth">
+            <li class="nav-menu-item">
+                <a href="/slots" class="nav-menu-link">Игровой зал</a>
             </li>
-            <li class="b-nav__menu-item">
-                <a href="/lottery" class="b-nav__menu-link"> <i class="b-nav__menu-label b-nav__menu-label_new"></i>Лотерея</a>
+            <li class="nav-menu-item">
+                <a href="/lottery" class="nav-menu-link"> <i class="b-nav__menu-label b-nav__menu-label_new"></i>Лотерея</a>
             </li>
-            <li class="b-nav__menu-item">
-                <a href="/shop" class="b-nav__menu-link">Магазин</a>
+            <li class="nav-menu-item">
+                <a href="/shop" class="nav-menu-link">Магазин</a>
             </li>
-            <li class="b-nav__menu-item">
-                <a data-counter="+0" href="/tournaments" class="b-nav__menu-link"> Турниры</a>
+            <li class="nav-menu-item">
+                <a data-counter="+0" href="/tournaments" class="nav-menu-link"> Турниры</a>
             </li>
-            <li class="b-nav__menu-item">
-                <a href="/vip" class="b-nav__menu-link">
+            <li class="nav-menu-item">
+                <a href="/vip" class="nav-menu-link">
                     <i class="b-nav__menu-label b-nav__menu-label_new"></i>VIP БОНУСЫ
                 </a>
             </li>
-            <li class="b-nav__menu-item">
-                <a href="/contact_us" class="b-nav__menu-link">Поддержка</a>
+            <li class="nav-menu-item">
+                <a href="/contact_us" class="nav-menu-link">Поддержка</a>
             </li>
         </ul>
     </nav>
 
-    <div class="b-head-gallery b-head-gallery__wrap">
-        <div class="b-head-gallery__gal"></div>
+    <div class="head-gallery-wrap">
+        <div class="head-gallery-gal"></div>
     </div>
-    <div class="b-top-info-wrapper clearfix">
-        <div class="b-top-info clearfix">
-            <div id="top-games" class="b-top-info__wins">
-                <h5 class="b-top-info__header">Сейчас выигрывают</h5>
 
-                <div class="b-top-info__lighter">
-                    <!--<div class="b-wins-list" style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; height: 150px;">-->
-                    <!--<ul class="b-wins-list__table" style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; height: 600px; top: -150px;"><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
+    <!--Hero-->
+    <div class="hero">
+        <div class="top-info">
+            <div id="top-games" class="top-info-wins">
+                <h5 class="top-info-header">Сейчас выигрывают</h5>
 
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">2400р.</span>-->
-                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">10500р.</span>-->
-                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">3100р.</span>-->
-                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">2400р.</span>-->
-                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">1200р.</span>-->
-                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">1800р.</span>-->
-                    <!--</li>-->
-                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">2100р.</span>-->
-                    <!--</li>-->
-                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">6600р.</span>-->
-                    <!--</li>-->
-                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">25000р.</span>-->
-                    <!--</li>-->
-                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">7500р.</span>-->
-                    <!--</li>-->
-                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">2400р.</span>-->
-                    <!--</li>-->
-                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">10500р.</span>-->
-                    <!--</li>-->
-                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">3100р.</span>-->
-                    <!--</li>-->
-                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">2400р.</span>-->
-                    <!--</li>-->
-                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">1200р.</span>-->
-                    <!--</li>-->
-                    <!--<li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">1800р.</span>-->
-                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">2100р.</span>-->
-                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">6600р.</span>-->
-                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">25000р.</span>-->
-                    <!--</li><li class="b-wins-list__item" style="overflow: hidden; float: none; width: 245px; height: 29px;">-->
-
-                    <!--<span class="col-1">***</span>-->
-                    <!--<span class="col-2">7500р.</span>-->
-                    <!--</li></ul>-->
-                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                    <!--</div>-->
+                <div class="top-info-lighter">
+                    <div class="b-wins-list"
+                         style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0; height: 150px;"></div>
                 </div>
-                <div class="b-top-info__game">
-                    <div id="b-top-info__game-ra"></div>
-                </div>
-                <div class="b-top-info__service">
-                    <h5 class="b-top-info__header">Круглосуточный сервис</h5>
-                    <img src="/templates/vu2/images/service.jpg?v=5b76d" alt=""
-                         class="b-top-info__lighter siteheart_btn" width="250" height="157">
-                </div>
-                <div class="clearfix"></div>
-                <a class="icon-play-button b-top-info__play-but" href="/register#reg"></a>
             </div>
-            <div class="b-top-info-shadow_right"></div>
-            <div class="b-top-info-shadow_left"></div>
-            <div class="b-top-info-shadow_bottom"></div>
+            <div class="top-info-game">
+                <div id="b-top-info__game-ra"></div>
+            </div>
+            <div class="hero-service">
+                <h5 class="top-info-header">Круглосуточный сервис</h5>
+                <img src="/assets/img/header/service.jpg?v=5b76d" alt="" class="img-siteheart"
+                     width="250" height="157">
+            </div>
+            <div class="clearfix"></div>
+            <a class="icon-play-button b-top-info__play-but" href="/register#reg"></a>
         </div>
     </div>
 </header>

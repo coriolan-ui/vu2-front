@@ -464,20 +464,18 @@ button {
 #header {
   width: 100%; }
 
-.b-header__login-form {
+.login-form {
+  overflow: hidden;
+  font-size: 12px;
+  color: #fff;
   float: left;
   margin: 10px 0 18px 335px; }
 
-.b-login-form {
-  overflow: hidden;
-  font-size: 12px;
-  color: #fff; }
-
-.b-login-form__fields {
+.login-form-fields {
   float: left;
   width: 170px; }
 
-.b-login-form__soc {
+.login-form-soc {
   float: left;
   margin-left: 23px;
   width: 150px; }
@@ -536,7 +534,7 @@ button {
   color: #4ad7ff;
   font-size: 10px; }
 
-.b-social-log__list {
+.social-log-list {
   display: inline-block;
   margin: 0 0 10px; }
 
@@ -571,7 +569,7 @@ button {
 .globologin-ya {
   background-position: 0 -248px; }
 
-.b-header__reg-but-area {
+.header-reg-but-area {
   float: right;
   margin: 15px 30px 5px 0;
   display: block;
@@ -588,7 +586,7 @@ button {
   text-decoration: none;
   text-shadow: 0 -1px 0 #006609; }
 
-.b-header__reg-but {
+.header-reg-but {
   display: block;
   width: 206px;
   height: 52px;
@@ -619,11 +617,11 @@ button {
   box-shadow: 0 7px 19px -2px #03DEF2;
   clear: both; }
 
-.b-nav__menu {
+.nav-menu {
   float: right;
   border-left: 1px solid #00153a; }
 
-.b-nav__menu-item {
+.nav-menu-item {
   position: relative;
   float: left;
   height: 58px;
@@ -631,7 +629,7 @@ button {
   border-left: 1px solid #005de1;
   border-right: 1px solid #00153a; }
 
-.b-nav__menu-link {
+.nav-menu-link {
   display: block;
   line-height: 58px;
   padding: 0 18px 0 17px;
@@ -650,12 +648,12 @@ button {
   background: linear-gradient(to bottom, #0034d2 0%, #0038a6 23%, #0039a2 73%, #002d7f 100%);
   box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.4) inset; }
 
-.b-top-info-wrapper {
+.hero {
   position: relative;
   width: 1000px;
   height: 270px; }
 
-.b-top-info {
+.top-info {
   width: 940px;
   height: 231px;
   position: absolute;
@@ -663,25 +661,51 @@ button {
   padding: 20px 30px;
   background: url(/assets/img/header/top_info_bg_all.jpg) no-repeat #00133a; }
 
-.b-head-gallery__wrap {
+.head-gallery-wrap {
   position: relative;
   width: 925px;
   margin: 0 auto; }
 
-.b-head-gallery__gal {
+.head-gallery-gal {
   overflow: hidden;
   padding: 0 12px;
   background: #001A52;
   height: 20px;
   box-shadow: inset 0 0 37px -6px #03AED5; }
 
-.b-top-info__wins {
+.top-info-wins {
   float: left;
   width: 251px; }
 
-.b-top-info__wins {
+.top-info-header {
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  margin-bottom: 17px;
+  text-align: center;
+  margin-top: 6px; }
+
+.top-info-lighter {
+  box-shadow: 0 0 12px 5px #005ae5;
+  cursor: pointer; }
+
+.top-info-game {
   float: left;
-  width: 251px; }
+  width: 338px;
+  margin-left: 50px;
+  text-align: center;
+  background: url(/assets/img/header/game_top.jpg) no-repeat;
+  height: 146px;
+  padding-top: 54px; }
+
+.hero-service {
+  float: left;
+  width: 250px;
+  margin-left: 50px; }
+
+.img-siteheart {
+  box-shadow: 0 0 12px 5px #005ae5;
+  cursor: pointer; }
 
 .hero {
   text-align: center; }

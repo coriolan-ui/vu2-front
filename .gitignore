@@ -2,3 +2,5 @@
 .sass-cache
 _site
 node_modules
+gulpfile.js
+assets/css/main.css

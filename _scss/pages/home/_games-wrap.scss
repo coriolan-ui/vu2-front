@@ -15,10 +15,6 @@
       display: block;
     }
   }
-
-  img {
-    display: block;
-  }
 }
 
 .game-item__thumb {
@@ -31,13 +27,13 @@
 }
 
 .game-item__thumb-border {
-  display: block;
-  width: 214px;
-  height: 154px;
-  position: absolute;
   background: url(/assets/img/header/header_sprite_png.png?v=4) -10px -268px no-repeat;
+  display: block;
+  position: absolute;
   top: -48px;
   left: -17px;
+  width: 214px;
+  height: 154px;
   z-index: 10;
 }
 
@@ -49,61 +45,19 @@
 }
 
 .game-item__thumb-overlay {
+  border-radius: 50%;
+  box-shadow: inset 0 0 125px 0 #000;
   display: none;
   position: absolute;
   top: 0;
   right: -3px;
   bottom: 0;
   left: 3px;
-  box-shadow: inset 0 0 125px 0 #000;
-  border-radius: 50%;
   z-index: 20;
 }
 
-.btn {
-  background: #20a631;
-  background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0,#00b10d),color-stop(100%,#008110));
-  background-image: -webkit-linear-gradient(#00b10d,#008110);
-  background-image: -moz-linear-gradient(#00b10d,#008110);
-  background-image: -o-linear-gradient(#00b10d,#008110);
-  background-image: linear-gradient(#00b10d,#008110);
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00B10D', endColorstr='#FF008110');
-  border: 1px solid;
-  border-color: #bfecc2 #17a61b #00a60e;
-  border-radius: 3px;
-  display: inline-block;
-  padding: 5px 10px;
-  margin-top: 30px;
-  width: auto;
-  font-size: 18px;
-  text-decoration: none;
-  text-transform: none;
-  text-shadow: 0 -1px 0 #006609;
-  outline: 0;
-
-  &:hover {
-    background: #00b00d;
-    border-color: #ddfabf #007f04 #007f04;
-    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0,#73e600),color-stop(100%,#039604));
-    background-image: -webkit-linear-gradient(#73e600,#039604);
-    background-image: -moz-linear-gradient(#73e600,#039604);
-    background-image: -o-linear-gradient(#73e600,#039604);
-    background-image: linear-gradient(#73e600,#039604);
-    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF73E600', endColorstr='#FF039604');
-  }
-
-  &:active {
-    background: #007e0d;
-    filter: none;
-    border-color: transparent;
-    outline: 0;
-    box-shadow: 0 0 10px rgba(0,0,0,.4) inset;
-  }
-}
-
 .game-item__title {
-  @include text-overflow;
-  display: block;
+  @include elipsis;
 }
 
 

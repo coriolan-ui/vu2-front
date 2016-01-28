@@ -44,3 +44,40 @@
   float: left;
   margin: 0 12px;
 }
+
+.b-footer__payments-link {
+    display: block;
+    background: url(/assets/img/sprite_png.png) no-repeat;
+    width: 26px;
+    height: 26px;
+}
+
+.b-footer__payments-link_visa-m {
+    background-position: 0 -555px;
+    width: 50px;
+}
+
+.b-footer__payments-link_yamoney {
+    background-position: -71px -555px;
+    width: 41px;
+}
+
+.b-footer__payments-link_liqpay {
+    background-position: -132px -555px;
+    width: 24px;
+}
+
+.b-footer__payments-link_qiwi {
+    background-position: -182px -555px;
+    width: 26px;
+}
+
+.b-footer__payments-link_sms {
+    background-position: -224px -555px;
+    width: 38px;
+}
+
+.b-footer__payments-link_wm {
+    background-position: -275px -555px;
+    width: 38px;
+}

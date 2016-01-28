@@ -31,6 +31,19 @@
   }
 }
 
+.btn--enter {
+  margin: 0;
+  background: #20a631;
+  border-color: #bfecc2 #17a61b #00a60e;
+  background-image: linear-gradient(#00b10d,#008110);
+
+  &:hover {
+    background: #00b00d;
+    border-color: #ddfabf #007f04 #007f04;
+    background-image: linear-gradient(#73e600,#039604);
+  }
+}
+
 .btn--show-all {
   background: #3a8d00;
   background: linear-gradient(to bottom,#bfe700 0,#3a8d00 100%);

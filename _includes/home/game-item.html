@@ -1,11 +1,12 @@
 <div class="game-item">
-  <div class="game-hint"></div>
-  <div class="game-thumb">
-    <span class="game-border"></span>
-    <img class="game-image js-lazy" data-original="{{ site.baseurl }}/assets/img/games/{{ games.slug }}.png" alt="{{ games.title }}">
-    <div class="game-overlay">
-      <a class="game-btn" href="{{ site.baseurl }}/{{ games.permalink }}">Играть</a>
+  <div class="game-item__thumb">
+    <span class="game-item__thumb-border">
+      <span class="game-hint"></span>
+    </span>
+    <img class="js-lazy" data-original="{{ site.baseurl }}/assets/img/games/{{ games.slug }}.png" alt="{{ games.title }}">
+    <div class="game-item__thumb-overlay">
+      <a class="btn" href="{{ site.baseurl }}/{{ games.permalink }}">Играть</a>
     </div>
   </div>
-  <a class="game-title" href="{{ site.baseurl }}/{{ games.permalink }}">{{ games.title }}</a>
+  <a class="game-item__title" href="{{ site.baseurl }}/{{ games.permalink }}">{{ games.title }}</a>
 </div>

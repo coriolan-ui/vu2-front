@@ -1,12 +1,63 @@
+// Site Search
+
+.game-search {
+  display: block;
+  position: absolute;
+  top: 420px;
+  right: 30px;
+}
+
+.game-search__logo {
+  background: url(/assets/img/sprite_png.png) 18px -592px no-repeat;
+  position: absolute;
+  top: -70px;
+  right: 40px;
+  width: 182px;
+  height: 55px;
+  z-index: 1;
+}
+
+.game-search__input {
+  border: 0;
+  border-radius: 3px;
+  border-bottom: 1px solid #fff;
+  box-shadow: inset 4px 3px 9px 0 rgba(0,0,0,.62);
+  display: inline-block;
+  float: right;
+  padding: 0 35px;
+  width: 170px;
+  height: 35px;
+  font-size: 14px;
+  color: #0567ca;
+}
+
+.game-search__helper {
+  border: 0;
+  clip: rect(0 0 0 0);
+  padding: 0;
+  margin: -1px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.game-search__desc {
+  float: right;
+  width: 145px;
+}
+
+// Games list
+
 .games-wrap__title {
+  margin-top: 60px;
+  margin-bottom: 50px;
   font-weight: 100;
-  margin: 60px 0 50px;
   color: #fff;
 }
 
 .game-list {
   @include clearfix;
-
 }
 
 .game-item {
@@ -44,13 +95,6 @@
   z-index: 10;
 }
 
-.game-hint {
-  background: url(/assets/img/game-hint.png) no-repeat center bottom;
-  display: block;
-  width: 100%;
-  height: 45px;
-}
-
 .game-item__thumb-overlay {
   border-radius: 50%;
   box-shadow: inset 0 0 125px 0 #000;
@@ -65,6 +109,13 @@
 
 .game-item__title {
   @include ellipsis;
+}
+
+.game-hint {
+  background: url(/assets/img/game-hint.png) no-repeat center bottom;
+  display: block;
+  width: 100%;
+  height: 45px;
 }
 
 

@@ -1,5 +1,12 @@
+.games-wrap__title {
+  font-weight: 100;
+  margin: 60px 0 50px;
+  color: #fff;
+}
+
 .game-list {
   @include clearfix;
+
 }
 
 .game-item {
@@ -27,7 +34,7 @@
 }
 
 .game-item__thumb-border {
-  background: url(/assets/img/header/header_sprite_png.png?v=4) -10px -268px no-repeat;
+  background: url(/assets/img/sprite_png.png) -10px -268px no-repeat;
   display: block;
   position: absolute;
   top: -48px;

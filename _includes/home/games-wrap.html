@@ -6,7 +6,7 @@
   <p id="project-description"></p>
 </div>
 
-<h2 class="layout-header">Самые популярные автоматы «Novomatic Gaminator»</h2>
+<h2 class="games-wrap__title">Самые популярные автоматы «Novomatic Gaminator»</h2>
 
 <div class="game-list">
   {% for games in site.categories.games limit:8 %}
@@ -14,11 +14,12 @@
   {% endfor %}
 </div>
 
-<h2 class="layout-header">Настоящие гаминаторы</h2>
+<h2 class="games-wrap__title">Настоящие гаминаторы</h2>
 
 <div class="game-list">
   {% for games in site.categories.games limit:15 %}
     {% include home/game-item.html %}
   {% endfor %}
+  <a class="btn--show-all" href="#">Показать все игры</a>
 </div>
 

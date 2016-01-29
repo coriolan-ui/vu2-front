@@ -1,83 +1,74 @@
-#footer {
-  left: 0;
-  clear: both;
-  width: 100%;
-  bottom: 0;
+.footer {
+  width: 840px;
   padding: 40px;
-  position: absolute;
-  box-sizing: border-box;
-  box-shadow: 0 8px 16px 5px #0015B4;
-  border-left: 1px solid #0033F7;
-  border-right: 1px solid #0033F7;
-  background-image: linear-gradient(#011842, #012257);
-}
-
-.b-footer__links-list {
-  overflow: hidden;
   text-align: center;
-  margin: 0 -15px 20px;
-}
-
-.b-footer__list-item:first-child {
-  border-left: 0 none;
-}
-
-.b-footer__list-item {
-  padding: 0 12px;
-  display: inline;
-  white-space: nowrap;
-  border-left: 1px solid #cfcfcf;
-}
-
-.b-footer__link {
-  color: #cfcfcf;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.b-footer__payments {
-  width: 365px;
+  background-image: linear-gradient(#011842, #012257);
+  box-shadow: 0 8px 16px 5px #0015B4;
+  border: 1px solid #0033F7;
+  border-top: 1px solid #172e5a;
   margin: 0 auto;
+  position: relative;
 }
 
-.b-footer__payments-item {
-  float: left;
-  margin: 0 12px;
+.footer-nav {
+  margin: 0 0 20px;
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    display: inline-block;
+    padding-right: 16px;
+    margin-right: 10px;
+    border-right: 1px solid $colorInitial;
+
+    &:last-child {
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__link {
+    color: $colorInitial;
+    text-decoration: none;
+  }
 }
 
-.b-footer__payments-link {
-    display: block;
+.payments {
+  &__item {
+    display: inline-block;
     background: url(/assets/img/sprite_png.png) no-repeat;
-    width: 26px;
     height: 26px;
-}
+    margin: 0 11px;
 
-.b-footer__payments-link_visa-m {
-    background-position: 0 -555px;
-    width: 50px;
-}
+    &--visa {
+      background-position: 0 -555px;
+      width: 50px;
+    }
 
-.b-footer__payments-link_yamoney {
-    background-position: -71px -555px;
-    width: 41px;
-}
+    &--mastercard {
+      background-position: -71px -555px;
+      width: 41px;
+    }
 
-.b-footer__payments-link_liqpay {
-    background-position: -132px -555px;
-    width: 24px;
-}
+    &--yamoney {
+      background-position: -132px -555px;
+      width: 26px;
+    }
 
-.b-footer__payments-link_qiwi {
-    background-position: -182px -555px;
-    width: 26px;
-}
+    &--liqpay {
+      background-position: -182px -555px;
+      width: 24px;
+    }
 
-.b-footer__payments-link_sms {
-    background-position: -224px -555px;
-    width: 38px;
-}
+    &--qiwi {
+      background-position: -224px -555px;
+      width: 38px;
+    }
 
-.b-footer__payments-link_wm {
-    background-position: -275px -555px;
-    width: 38px;
+    &--sms {
+      background-position: -275px -555px;
+      width: 38px;
+    }
+  }
 }

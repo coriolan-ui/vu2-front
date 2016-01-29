@@ -1,12 +1,9 @@
-<a href="/slots#slots" class="b-multi"></a>
-<div class="b-search-input__wrapper b-search-input__wrapper--right">
-  <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-  <input name="game_search" id="game_search" class="b-search__input ui-autocomplete-input" placeholder="Найди любимую игру" autocomplete="off">
-  <input type="hidden" id="project-id">
-  <p id="project-description"></p>
+<div class="game-search">
+  <a href="/slots#slots" class="game-search__logo"></a>
+  <input class="game-search__input" placeholder="Найди любимую игру">
 </div>
 
-<h2 class="layout-header">Самые популярные автоматы «Novomatic Gaminator»</h2>
+<h2 class="games-wrap__title">Самые популярные автоматы «Novomatic Gaminator»</h2>
 
 <div class="game-list">
   {% for games in site.categories.games limit:8 %}
@@ -14,11 +11,12 @@
   {% endfor %}
 </div>
 
-<h2 class="layout-header">Настоящие гаминаторы</h2>
+<h2 class="games-wrap__title">Настоящие гаминаторы</h2>
 
 <div class="game-list">
   {% for games in site.categories.games limit:15 %}
     {% include home/game-item.html %}
   {% endfor %}
+  <a class="btn--show-all" href="#">Показать все игры</a>
 </div>
 

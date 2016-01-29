@@ -52,45 +52,7 @@ button, input {
   margin: 0 auto;
 }
 
-.b-search-input__wrapper--right {
-  top: 420px;
-  right: 30px;
-  left: auto;
-  display: block;
-  position: absolute;
-}
-
-.ui-helper-hidden-accessible {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-#game_search {
-  float: right;
-  width: 145px;
-}
-
-.b-search-input__wrapper .b-search__input {
-  display: inline-block;
-  width: 170px;
-  height: 35px;
-  color: #0567ca;
-  font-size: 14px;
-  border: 0;
-  border-radius: 3px;
-  border-bottom: 1px solid #fff;
-  box-shadow: inset 4px 3px 9px 0 rgba(0,0,0,.62);
-  padding: 0 35px;
-  //background: url(/templates/vu2/images/sprite_png.png?v=4) -89px -176px no-repeat #c0d7ff;
-}
-
-.h-prg, p {
+p {
   display: block;
   margin-bottom: 15px;
 }
@@ -103,21 +65,6 @@ button, input {
   h4 {
     color: $colorPrimary;
   }
-}
-
-.layout-header {
-  font-weight: 100;
-  margin: 60px 0;
-}
-
-.b-multi {
-  position: absolute;
-  width: 182px;
-  height: 55px;
-  background: url(/assets/img/header/header_sprite_png.png?v=4) 18px -592px no-repeat;
-  right: 40px;
-  margin-top: -70px;
-  z-index: 1;
 }
 
 

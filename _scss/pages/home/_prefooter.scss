@@ -1,4 +1,16 @@
 .home-prefooter {
+  position: relative;
+  padding-top: 30px;
+
+  &:before { 
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    right: -40px;
+    border-top: 1px solid #0F1D40;
+    border-bottom: 1px solid #072565;
+  }
 
   h1 {
     color: $colorPrimary;

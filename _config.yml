@@ -7,17 +7,17 @@ subtitle: Google material design for static sites
 description: > # this means to ignore newlines until "baseurl:"
   This is a material design theme for Polymer using Google's Polymer library. It's still an early draft, so be nice.
 
-author: Julia Ebert
-author_website: http://juliaebert.com
-email: julia@juliaebert.com
+author: Ihor Orlovskyi
+author_website: http://ihororlovksyi.com
+email: ihororlovksyi@gmail.com
 
 baseurl: "/empty1" # the subpath of your site, e.g. /blog. For deploying to github pages, this should match your repo name
-url: "http://juliaebert.com" # the base hostname & protocol for your site
+url: "http://ihororlovksyi.com" # the base hostname & protocol for your site
 
 twitter_username: ''
 github_username:  jtebert
 disqus_shortname: juliaebert
-google_analytics: UA-54476418-1
+google_analytics: UA-64090017-1
 
 # Pagination
 paginate: 5

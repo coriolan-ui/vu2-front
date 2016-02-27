@@ -1,7 +1,0 @@
-.DS_Store
-.idea
-.sass-cache
-_site
-node_modules
-gulpfile.js
-assets/css/main.css

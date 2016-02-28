@@ -8,15 +8,15 @@ description: > # this means to ignore newlines until "baseurl:"
   This is a material design theme for Polymer using Google's Polymer library. It's still an early draft, so be nice.
 
 author: Ihor Orlovskyi
-author_website: http://ihororlovksyi.com
-email: ihororlovksyi@gmail.com
+author_website: http://ihororlovskyi.com
+email: ihororlovskyi@gmail.com
 
 baseurl: "/empty1" # the subpath of your site, e.g. /blog. For deploying to github pages, this should match your repo name
-url: "http://ihororlovksyi.com" # the base hostname & protocol for your site
+url: "http://ihororlovskyi.com" # the base hostname & protocol for your site
 
-twitter_username: ''
-github_username:  jtebert
-disqus_shortname: juliaebert
+twitter_username: 'ihororlovskyi'
+github_username:  ihororlovskyi
+disqus_shortname: 
 google_analytics: UA-64090017-1
 
 # Pagination

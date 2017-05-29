@@ -50,8 +50,14 @@
   firebase.auth().onAuthStateChanged(firebaseUser => {
     if(firebaseUser) {
       console.log(firebaseUser);
+      btnLogout.classList.remove('is-hidden');
+      btnLogin.classList.add('is-hidden');
+      btnSignUp.classList.add('is-hidden');
     } else {
       console.log('not logged in');
+      btnLogout.classList.add('is-hidden');
+      btnLogin.classList.remove('is-hidden');
+      btnSignUp.classList.remove('is-hidden');
     }
   });
 

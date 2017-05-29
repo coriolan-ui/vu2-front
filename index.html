@@ -2,25 +2,31 @@
 <html lang='en'>
 <head>
   <meta charset='utf-8'>
-  <title>Firebase Auth</title>
+  <title>Firebase Auth Example</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <script src='https://www.gstatic.com/firebasejs/4.0.0/firebase.js'></script>
   <style>
     html {
       font-family: sans-serif;
     }
+    .is-hidden {
+      display: none;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Firebase Auth</h1>
+  <h1>Firebase Auth Example</h1>
 
-  <p><input id='txtEmail' type='email' placeholder='Email'></p>
-  <p><input id='txtPassword' type='password' placeholder='Password'></p>
+  <p>Email: <i>demo@hu.li</i></p>
+  <p>Password: <i>123456</i></p>
+
+  <p><input id='txtEmail' type='email' placeholder='Email' name="email"></p>
+  <p><input id='txtPassword' type='password' placeholder='Password' name="password"></p>
   <p>
     <button id='btnLogin'>Login</button>
     <button id='btnSignUp'>Sign Up</button>
-    <button id='btnLogout'>Logout</button>
+    <button id='btnLogout' class="is-hidden">Logout</button>
   </p>
 
   <script src='app.js'></script>

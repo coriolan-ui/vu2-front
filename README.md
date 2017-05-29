@@ -1,3 +1,2 @@
-# Authenticated Routes with Nuxt.js
+# Firebase Auth
 
-`npm run develop`
